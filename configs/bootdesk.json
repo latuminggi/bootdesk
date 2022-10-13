@@ -1,0 +1,7 @@
+{
+    "app": {
+        "brand_name": "BootDesk",
+        "brand_version": "0.1",
+        "brand_icon_path": "./assets/icons/bootdesk@48px.png"
+    }
+}
