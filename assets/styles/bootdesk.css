@@ -1,0 +1,109 @@
+/* Variables */
+:root {
+    --menu-dropdown-active: #e9ecef;
+    --notif-time-text: #afafaf;
+    --notif-span-text: #939393;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--bs-dropdown-link-color);
+}
+
+/* Top Menu */
+#top_menu nav {
+    border-bottom: 1px solid;
+    border-color: var(--bs-border-color-translucent);
+    height: 26px;
+}
+
+#top_menu .navbar-brand img {
+    width: 18px;
+    padding-bottom: 4px;
+}
+
+#top_menu .nav-link {
+    color: var(--bs-dropdown-link-color);
+}
+
+#top_menu .nav-link.dropdown-toggle.show {
+    background-color: var(--menu-dropdown-active);
+    padding: 8px 8px 4px;
+}
+
+#top_menu .nav-link.dropdown-toggle::after {
+    content: unset;
+}
+
+#top_menu .navbar-nav .dropdown-menu {
+    margin: -4px 0 0;
+    padding: 2px 0;
+    border-radius: unset;
+    border-top: unset;
+}
+
+#top_menu .navbar-nav .dropdown-menu .dropdown-item {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+#top_menu .navbar-nav .dropdown-menu .dropdown-item time {
+    float: right;
+    font-size: .66rem;
+    line-height: 1.75;
+    color: var(--notif-time-text);
+}
+
+#top_menu .navbar-nav .dropdown-menu .dropdown-item span {
+    display: block;
+    font-size: 11px;
+    color: var(--notif-span-text);
+}
+
+#top_menu .navbar-nav.dropstart .dropdown-menu {
+    margin-top: 30px;
+}
+
+#top_menu .navbar-nav.dropstart .nav-link.dropdown-toggle::before {
+    content: unset;
+}
+
+#top_menu .dropdown-divider {
+    margin: 2px 0;
+}
+
+#top_menu .bi::before {
+    font-size: 16px;
+    line-height: .9;
+}
+
+#top_menu .windowTitle {
+    color: var(--bs-dropdown-link-color);
+    text-decoration: none;
+}
+
+#top_menu .form-switch.dark-mode {
+    margin-bottom: -6px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #top_menu nav {
+        border-bottom: none;
+        border-color: none;
+    }
+
+    #top_menu .navbar-brand img {
+        width: 48px;
+    }
+
+    #top_menu .navbar-nav.dropstart .dropdown-menu {
+        margin-top: 0;
+    }
+
+    #top_menu .windowTitle {
+        display: none;
+    }
+}
